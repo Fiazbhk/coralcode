@@ -16,7 +16,7 @@ RUN pip install --upgrade pip && pip install uv
 COPY . .
 
 # Create virtual environment and sync dependencies
-RUN uv venv && uv pip install --upgrade pip && uv sync --no-dev
+RUN uv venv && uv pip install --upgrade pip
 
 # Expose necessary ports
 EXPOSE 3001 5555
